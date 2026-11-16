@@ -1,0 +1,9 @@
+
+# Java compiled output
+*.class
+out/
+build/
+
+# IDE settings
+.idea/
+.vscode/

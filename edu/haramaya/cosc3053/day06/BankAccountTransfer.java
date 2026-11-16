@@ -1,6 +1,6 @@
 package edu.haramaya.cosc3053.day06;
 
-import day5.edu.haramaya.cosc3053.BankAccount;
+import edu.haramaya.cosc3053.day05.BankAccount;
 
 public class BankAccountTransfer {
 
