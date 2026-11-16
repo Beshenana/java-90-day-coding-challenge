@@ -1,0 +1,32 @@
+
+package edu.haramaya.cosc3053.Day14;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+@FunctionalInterface
+interface NumberChecker {
+    boolean check(int number);
+}
+
+public class LambdaDemo {
+
+    public static void main(String[] args) {
+
+        // Custom functional interface with a lambda
+        NumberChecker checker = n -> n % 2 == 0;
+
+        // TODO 14.1: Use Predicate to filter list of numbers
+        List<Integer> nums = List.of(12, 45, 68, 23, 90, 11);
+
+        Predicate<Integer> isEven = n -> n % 2 == 0;
+
+        System.out.print("Even Numbers: ");
+
+        nums.stream()
+            .filter(isEven)
+            .forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+    }
+}
